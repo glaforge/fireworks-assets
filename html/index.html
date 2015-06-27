@@ -13,15 +13,19 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Restlet</a>
+      <a id="logo-container" href="#" class="brand-logo"><img src="../img/restlet.png" height="30px"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">APISpark</a></li>
-        <li><a href="#">Restlet Studio</a></li>
-        <li><a href="#">Restlet Framework</a></li>
+        <li><a href="http://restlet.com/products/apispark"><img src="../img/logo-apispark.png" height="35px"></a></li>
+        <li><a href="http://restlet.com/products/restlet-studio"><img src="../img/logo-restlet-studio.png" height="35px"></a></li>
+        <li><a href="http://restlet.com/products/restlet-framework"><img src="../img/logo-restlet-framework.png" height="35px"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Submit a firework</a></li>
+        <li><a href="http://restlet.com">Restlet</a></li>
+        <li><a href="http://restlet.com/products/apispark">APISpark</a></li>
+        <li><a href="http://restlet.com/products/restlet-studio">Restlet Studio</a></li>
+        <li><a href="http://restlet.com/products/restlet-framework">Restlet Framework</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -30,16 +34,17 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
         <h1 class="header center orange-text text-lighten-2">July 4th Fireworks</h1>
         <div class="row center">
-          <h5 class="header col s12 light">For July 4th, let's find a firework to enjoy in your area!</h5>
+          <h5 class="header col s12 light">
+            For July 4th, let's find a firework to enjoy in your area!<br/>
+            And contribute the ones you know around you.
+          </h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange lighten-1">Submit a firework</a>
+          <a href="#" id="submit-firework" class="btn-large waves-effect waves-light orange lighten-1">Submit a firework</a>
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="../img/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -87,7 +92,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h2 class="header col s12 orange-text light">
+            Host your Google Sheets-powered Web APIs and website assets in APISpark
+          </h2>
         </div>
       </div>
     </div>
@@ -101,14 +108,14 @@
         <div class="col s12 center">
           <h4>About this site</h4>
           <p class="left-align light">
-            These fireworks are powered by APISpark, the API platform provided by Restlet.
-            We hand-picked selected fireworks taking place in all the US sates,
+            This fireworks listing is powered by APISpark, the API platform provided by Restlet.
+            We hand-picked fireworks taking place in all the US sates,
             and we let you submit new ones in you area.
             The data collected is hosted in an APISpark Google Sheets wrapper.
             The fireworks that you submit are going through a Google Form that appends data to our spreadsheet.
-            APISpark is then responsible for exposing the data from this Google Sheets as a Web APIs.
+            APISpark is then responsible for exposing the data from this Google Sheets as a Web API.
             All the assets of this site are also hosted through an APISpark file store, served by our platform.
-            The design is coming from the Materialize projects, while the images are free for reuse, 
+            The design is coming from the Materialize project, while the images are free for reuse,
             coming from the Wikimedia foundation and from Flickr.
           </p>
         </div>
@@ -122,22 +129,24 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="header center orange-text text-lighten-2">Happy July 4th Fireworks</h1>
-            <p class="light">
-                Fireworks pictures coming from:
-            </p>
-            <ul class="collection white-text">
-              <li class="collection-item orange">
-              <a href="https://www.flickr.com/photos/walkadog/3684396632">American flag firework</a>
-              </li>
-              <li class="collection-item orange">
-              <a href="https://commons.wikimedia.org/wiki/File:370_rsd_fireworks_blue.jpg">East River firework</a>
-              </li>
-              <li class="collection-item orange">
-              <a href="https://commons.wikimedia.org/wiki/File:Fireworks_DetroitWindsorIntlFreedomFest.jpg">Detroit firework</a>
-              </li>
-            </ul>
-          </ul>
+          <h1 class="header center teal-text">Happy July 4th</h1>
+          <p class="light teal-text">
+            Fireworks pictures coming from:
+          </p>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <a class="waves-effect waves-light btn" href="https://www.flickr.com/photos/walkadog/3684396632">
+              <i class="material-icons left"></i>
+              American flag firework
+            </a>
+          </div>
+          <div class="col s4">
+            <a class="waves-effect waves-light btn" href="https://commons.wikimedia.org/wiki/File:370_rsd_fireworks_blue.jpg">East River firework</a>
+          </div>
+          <div class="col s4">
+            <a class="waves-effect waves-light btn" href="https://commons.wikimedia.org/wiki/File:Fireworks_DetroitWindsorIntlFreedomFest.jpg">Detroit firework</a>
+          </div>
         </div>
       </div>
     </div>
@@ -148,7 +157,7 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Restlet</h5>
+          <h5 class="white-text">About us</h5>
           <p class="grey-text text-lighten-4">
             At Restlet, we know about APIs. We provide tools for developers (and non-developers, too) to design, create, run and manage APIs that provide access to any data or application.
           </p>
