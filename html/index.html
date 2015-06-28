@@ -42,8 +42,18 @@
           </h5>
         </div>
         <div class="row center">
-          <a href="https://docs.google.com/forms/d/1ea3ez7jS13Tr13xl0eUoDjKdDHZhG1VFw2MUlEzX3Kk/viewform"
-             id="submit-firework" class="btn-large waves-effect waves-light orange lighten-1 z-depth-3">Submit a firework</a>
+          <a href="#gform" id="submit-firework" class="modal-trigger btn-large waves-effect waves-light orange lighten-1 z-depth-3">Submit a firework</a>
+
+          <!-- Modal Structure -->
+          <div id="gform" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <iframe src="https://docs.google.com/forms/d/1ea3ez7jS13Tr13xl0eUoDjKdDHZhG1VFw2MUlEzX3Kk/viewform?embedded=true"
+                      width="660" height="350" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+            </div>
+          </div>
         </div>
         <br><br>
       </div>
@@ -230,6 +240,16 @@
         $('.collapsible').collapsible({
           accordion : true
         });
+
+        $('.modal-trigger').leanModal({
+                  dismissible: true,
+                  opacity: .5,
+                  in_duration: 300,
+                  out_duration: 200,
+                  ready: function() {  },
+                  complete: function() {  }
+                }
+        );
       });
     });
   </script>
