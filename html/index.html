@@ -65,6 +65,20 @@
     <div class="section">
       <div class="row" id="state-container">
 
+        <div id="spinner" class="col s12 center">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
         <script>
           var states = [
             "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "DC", "Delaware",
@@ -78,7 +92,7 @@
           states.forEach(function(state) {
             document.write(
                     '<div class="col s4">' +
-                      '<ul class="collapsible teal" data-collapsible="accordion" id="' + state.replace(' ', '-') + '">' +
+                      '<ul class="collapsible teal" data-collapsible="accordion"  style="display:none" id="' + state.replace(' ', '-') + '">' +
                         '<li class="white-text">' +
                           '<div class="collapsible-header teal"><h5>' + state + '</h5></div>' +
                         '</li>' +
@@ -253,10 +267,12 @@
                           '</li>');
         });
 
+        $('#spinner').hide();
+
         states.forEach(function(state) {
           var stateElem = $('#' + state.replace(' ', '-'));
           console.log(stateElem.children().length);
-          if (stateElem.children().length <= 1) stateElem.hide();
+          if (stateElem.children().length > 1) stateElem.show();
         });
 
         $('.collapsible').collapsible({
