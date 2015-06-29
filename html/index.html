@@ -34,10 +34,10 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <h1 class="header center orange-text text-lighten-2">July 4th Fireworks</h1>
+        <h1 class="header center orange-text text-lighten-2">4th of July Fireworks</h1>
         <div class="row center">
           <h5 class="header col s12 light">
-            For July 4th, let's find a firework to enjoy in your area!<br/>
+            For Independence Day, let's find fireworks to enjoy in your area!<br/>
             And contribute the ones you know around you.
           </h5>
         </div>
@@ -78,9 +78,9 @@
           states.forEach(function(state) {
             document.write(
                     '<div class="col s4">' +
-                      '<ul class="collapsible" data-collapsible="accordion" id="' + state.replace(' ', '-') + '">' +
-                        '<li>' +
-                          '<div class="collapsible-header"><h5>' + state + '</h5></div>' +
+                      '<ul class="collapsible teal" data-collapsible="accordion" id="' + state.replace(' ', '-') + '">' +
+                        '<li class="white-text">' +
+                          '<div class="collapsible-header teal"><h5>' + state + '</h5></div>' +
                         '</li>' +
                       '</ul>' +
                     '</div>');
@@ -107,33 +107,36 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
+        <div class="col s9 center">
           <h4>About this site</h4>
           <p class="left-align light">
-            This fireworks listing is powered by <a href="http://restlet.com/products/apispark">APISpark</a>, 
-            the API platform provided by <a href="http://restlet.com">Restlet</a>.
+            This fireworks listing is powered by <a href="http://restlet.com/products/apispark" class="orange-text text-lighten-2">APISpark</a>,
+            the API platform provided by <a href="http://restlet.com" class="orange-text text-lighten-2">Restlet</a>.
           </p>
           <p class="left-align light">
-            We hand-picked fireworks taking place in all the US sates,
+            We hand-picked fireworks taking place in all the US states,
             and we let you submit new ones in you area.
           </p>
           <p class="left-align light">
             The data collected is hosted in an
-            <a href="http://restlet.com/technical-resources/apispark/tutorials/turn-spreadsheet-to-api">APISpark Google Sheets wrapper</a>.
+            <a href="http://restlet.com/technical-resources/apispark/tutorials/turn-spreadsheet-to-api" class="orange-text text-lighten-2">APISpark Google Sheets wrapper</a>.
             The fireworks that you submit are going through a Google Form that appends data to our spreadsheet.
             APISpark is then responsible for exposing the data from this Google Sheets as a Web API.
           </p>
           <p class="left-align light">
-            All the <a href="https://github.com/glaforge/fireworks-assets">assets</a> of this site are also hosted
-            through an <a href="http://restlet.com/technical-resources/apispark/tutorials/github">APISpark Github file store</a>, served by our platform.
+            All the <a href="https://github.com/glaforge/fireworks-assets" class="orange-text text-lighten-2">assets</a> of this site are also hosted
+            through an <a href="http://restlet.com/technical-resources/apispark/tutorials/github" class="orange-text text-lighten-2">APISpark Github file store</a>, served by our platform.
           </p>
           <p class="left-align light">
-            The design is coming from the Materialize project, while the images are free for reuse,
+            The design is coming from the <a href="http://materializecss.com" class="orange-text text-lighten-2">Materialize</a> project, while the images are free for reuse,
             coming from the Wikimedia foundation and from Flickr.
           </p>
+        </div>
+        <div class="col s3 center">
+          <h4>Contact us</h4>
           <p class="left-align light">
-            Contact us through <a href="http://twitter.com/restlet">twitter</a>
-            or by <a href="mailto:contact@restlet.com">email</a> if you want to talk to us about our products
+            Contact us through <a href="http://twitter.com/restlet" class="orange-text text-lighten-2">twitter</a>
+            or by <a href="mailto:contact@restlet.com" class="orange-text text-lighten-2">email</a> if you want to talk to us about our products
             or suggest an improvement to this site.
           </p>
         </div>
@@ -183,7 +186,7 @@
         <div class="col l6 s12">
           <h5 class="white-text">About us</h5>
           <p class="grey-text text-lighten-4">
-            At <a href="http://restlet.com">Restlet</a>, we know about APIs.
+            At <a href="http://restlet.com" class="orange-text text-lighten-3">Restlet</a>, we know about APIs.
             We provide tools for developers (and non-developers, too) to
             design, create, run and manage APIs that provide access to any data or application.
           </p>
@@ -195,24 +198,27 @@
         <div class="col l3 s12">
           <h5 class="white-text">Products</h5>
           <ul>
-            <li><a class="white-text" href="http://restlet.com/products/restlet-framework">Restlet Framework</a></li>
-            <li><a class="white-text" href="http://restlet.com/products/apispark">APISpark</a></li>
-            <li><a class="white-text" href="http://restlet.com/products/restlet-studio">Restlet Studio</a></li>
+            <li><a class="orange-text text-lighten-3" href="http://restlet.com/products/restlet-framework">Restlet Framework</a></li>
+            <li><a class="orange-text text-lighten-3" href="http://restlet.com/products/apispark">APISpark</a></li>
+            <li><a class="orange-text text-lighten-3" href="http://restlet.com/products/restlet-studio">Restlet Studio</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="http://restlet.com/">Company</a></li>
-            <li><a class="white-text" href="http://restlet.com/blog">Blog</a></li>
-            <li><a class="white-text" href="https://twitter.com/restlet">Twitter</a></li>
+            <li><a class="orange-text text-lighten-3" href="http://restlet.com/">Company</a></li>
+            <li><a class="orange-text text-lighten-3" href="http://restlet.com/blog">Blog</a></li>
+            <li><a class="orange-text text-lighten-3" href="https://twitter.com/restlet">Twitter</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        Made with &hearts; thanks to <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>,
+        <a class="orange-text text-lighten-3" href="https://github.com/marmelab/restful.js">Restful.js</a>,
+        <a class="orange-text text-lighten-3" href="https://www.google.com/sheets/about/">Google Sheets</a>,
+        and <a class="orange-text text-lighten-3" href="http://restlet.com/products/apispark">APISpark</a>.
       </div>
     </div>
   </footer>
@@ -237,7 +243,7 @@
                             '<div class="collapsible-header">' +
                               townData.city +
                             '</div>' +
-                            '<div class="collapsible-body popout"><p>' +
+                            '<div class="collapsible-body popout orange lighten-5"><p>' +
                               '<b>' + townData.date + ' &mdash; ' + townData.time + '</b> ' +
                                 (townData.duration == 0 ? '' : '(' + townData.duration + ' min)') + '<br/>' +
                               '<b>Event:</b> ' + townData.location +
